@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: hello-app
-        image: nginx
+        image: ghcr.io/aa-130/lab1:latest
         ports:
         - containerPort: 80
