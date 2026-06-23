@@ -26,6 +26,6 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           context: .
-          file: ./kubernetes/apps/app/Dockerfile 
+          #file: ./kubernetes/apps/app/Dockerfile 
           push: true
           tags: ghcr.io/${{ github.repository }}:latest
