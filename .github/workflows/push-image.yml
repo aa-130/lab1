@@ -19,6 +19,9 @@ jobs:
   build-and-test:
     if: github.ref_type != 'tag' # Explicit exclude, so no new build is created for tags
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
